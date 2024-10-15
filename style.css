@@ -1,0 +1,306 @@
+/* uso de variáveis para facilitar*/
+:root {
+    --main-color: #d3ad7f;
+    --black: #13131a;
+    --bg: #010103;
+    --border: 0.1rem solid rgba(255, 255, 255, 0.3);
+    font-size: 10px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    /* retira o sublinhado dos links*/
+    font-family: "Roboto", sans-serif;
+    transition: 0.2s linear;
+}
+
+body {
+    background-color: var(--bg);
+}
+
+section {
+    padding: 3rem 2rem;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.header {
+    position: fixed;
+    background-color: var(--bg);
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    /* define quem fica na frente de quem*/
+    border-bottom: var(--border);
+}
+
+.header section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.navbar a {
+    margin: 0 1rem;
+    font-size: 2rem;
+    color: #fff;
+}
+
+.navbar a:hover {
+    color: var(--main-color);
+    border-bottom: var(--border);
+    padding-bottom: 0.2rem;
+    font-size: 1.8rem;
+}
+
+.icons img {
+
+    margin: 1rem;
+    cursor: pointer;
+}
+
+.icons img:hover {
+    width: 40px;
+    height: 40px;
+}
+
+.btn {
+    background: var(--main-color);
+    color: #fff;
+    padding: 1rem 3rem;
+    display: inline-block;
+    font-size: 1.7rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    border: var(--border);
+
+}
+
+.btn:hover {
+    letter-spacing: 0.2rem;
+}
+
+.home-container {
+    background: url("/imagens/corte1.jpeg");
+    opacity: 0.3;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    transition: 2.5s;
+
+}
+
+.home-container:hover {
+    opacity: 1.0;
+
+}
+
+.home-container section {
+    display: flex;
+    align-items: center;
+    margin-top: 16rem;
+    margin-left: 5px;
+
+
+}
+
+.content {
+    max-width: 70rem;
+   text-align: justify;
+    color: var(--bg);
+    padding: 1rem 2rem;
+}
+
+.content h3 {
+    color: var(--main-color);
+    font-size: 3rem;
+
+}
+
+
+.content p {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 100;
+    line-height: 1.8;
+    padding: 1rem 0;
+}
+
+.title {
+    font-size: 4rem;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 4rem;
+
+}
+
+.form1 .row {
+    display: flex;
+    text-align: center;
+    background: var(--black);
+    gap: 1.5rem;
+}
+
+.form1.row .content {
+    padding: 2rem;
+}
+
+.form1 .row .content h3 {
+    font-size: 3rem;
+    color: var(--main-color);
+
+
+}
+
+.form1 .row .content p {
+    align-items: center;
+    font-size: 1.6rem;
+    color: #fff;
+    padding: 1rem 0;
+    line-height: 1.8;
+
+}
+
+.form1 .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+}
+
+.form1 .box-container .box {
+    text-align: center;
+    justify-items: center;
+    border: var(--border);
+    padding: 6rem;
+    cursor: pointer;
+
+}
+
+.form1 .box-container .box:hover {
+    background-color: var(--main-color);
+}
+
+
+.form1 .box-container .box img:hover {
+    height: 10rem;
+}
+
+.form1 .box-container .box h3 {
+    color: #fff;
+    font-size: 2rem;
+    padding: 1rem 0;
+
+}
+
+.form1 .box-container .box:hover>* {
+    color: var(--black)
+}
+
+
+form {
+    width: 600px;
+    height: auto;
+    color: #fff;
+    border: var(--border);
+    border-radius: 5px;
+    background: var(--black);
+    margin: auto;
+    padding: 10px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    font-size: 2.2rem;
+
+
+}
+span{
+    color: red;
+}
+
+.img_logo {
+    margin-left: 37%;
+
+}
+
+label,
+input {
+    display: block;
+    width: 99%;
+
+
+}
+
+label,
+textarea {
+
+    display: block;
+    width: 99%;
+
+}
+
+button {
+    display: block;
+    width: 100%;
+    font-size: 2rem;
+    margin: auto;
+    padding: 10px;
+    border: none;
+    background-color: var(--main-color);
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+
+
+.address {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer {
+    text-align: center;
+
+}
+
+.footer .share {
+    padding: 1rem 0;
+}
+
+.footer .share h2 {
+    color: #fff;
+
+}
+
+.footer .share p {
+    color: var(--main-color);
+    font-size: 1.5rem;
+}
+
+.footer .share img {
+    margin: 0.3rem;
+    cursor: pointer;
+    border-radius: 50%;
+    padding: 1rem;
+}
+
+.footer .share img:hover {
+    background: var(--main-color);
+}
+
+.erro{
+    color: red;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
