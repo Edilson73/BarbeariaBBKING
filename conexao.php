@@ -1,9 +1,10 @@
 <?php
 // Configurações do banco de dados
-$servername = "localhost";
-$username = "root"; // geralmente é 'root' no XAMPP
-$password = ""; // senha padrão vazia
-$dbname = "barbearia"; // substitua pelo nome do seu banco de dados
+$servername = "sql205.infinityfree.com";
+$username = "if0_37526193"; // geralmente é 'root' no XAMPP
+$password = "AOEaeH6XRXcl"; // senha padrão vazia
+$dbname = "if0_37526193_barbearia"; // substitua pelo nome do seu banco de dados
+
 
 // Criação da conexão
 $conn = new mysqli($servername, $username, $password, $dbname);
